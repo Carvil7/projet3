@@ -3,6 +3,10 @@ body {
   padding: 50px;
 }
 
-h2 {
-  padding: auto;
+#logo {
+  text-align: center;
+  width: 150px;
+  height: 50%;
+  display: block;
+  margin: auto;
 }/*# sourceMappingURL=index.css.map */
