@@ -16,16 +16,43 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
-#logo {
-  text-align: center;
-  width: 200px;
-  height: 50%;
+h1 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
 }
 
-p {
+.loc {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebedef;
+  box-shadow: inset 0px 3px 4px lightgrey;
+}
+
+.lieu {
+  margin-left: 10px;
+}
+
+.eat_menu {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu {
+  display: block;
+  text-align: center;
+  padding: 40px;
+}
+
+.eat {
+  background-color: #f2f2f2;
+}
+
+.restaurant {
+  font-weight: 300;
+  font-size: 18px;
 }/*# sourceMappingURL=index.css.map */
