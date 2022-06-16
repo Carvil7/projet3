@@ -23,6 +23,43 @@ h1 {
   padding: 10px;
 }
 
+footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+footer h1 {
+  color: white;
+  font-size: 20px;
+  display: block;
+  text-align: left;
+}
+
+.contain_partner {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.contain_footer {
+  padding: 10px;
+}
+
+.contain_footer p {
+  margin: 5px 5px 5px 0;
+}
+
+.fa-solid.fa-utensils::before {
+  font-size: 14px;
+  margin: 0px 10px 0 0;
+}
+
+.fa-solid.fa-handshake-angle::before {
+  font-size: 13px;
+  margin: 0px 6px 0 0;
+}
+
 .loc {
   text-align: center;
   display: flex;
@@ -156,6 +193,7 @@ button {
   width: 40%;
   height: 40%;
   border-radius: 25px;
+  box-shadow: 0 5px 7px rgb(200, 199, 199);
 }
 
 .restaurant_link {

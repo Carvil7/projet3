@@ -21,4 +21,41 @@ h1 {
   text-align: center;
   margin: 0px;
   padding: 10px;
+}
+
+footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+footer h1 {
+  color: white;
+  font-size: 20px;
+  display: block;
+  text-align: left;
+}
+
+.contain_partner {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.contain_footer {
+  padding: 10px;
+}
+
+.contain_footer p {
+  margin: 5px 5px 5px 0;
+}
+
+.fa-solid.fa-utensils::before {
+  font-size: 14px;
+  margin: 0px 10px 0 0;
+}
+
+.fa-solid.fa-handshake-angle::before {
+  font-size: 13px;
+  margin: 0px 6px 0 0;
 }/*# sourceMappingURL=page1.css.map */
