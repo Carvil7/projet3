@@ -42,21 +42,26 @@ footer h1 {
     display: block;
     text-align: left;
 }
+
+.contain_footer {
+    padding: 10px;
+}
+
+.contain_footer p {
+    margin: 3px 5px 3px 0;
+}
+
 .contain_partner {
     display: flex;
     align-items: center;
     justify-content: left;
 }
-.contain_footer {
-    padding: 10px;
-}
-.contain_footer p {
-    margin: 3px 5px 3px 0;
-}
+
 .fa-solid.fa-utensils::before {
     font-size: 14px;
     margin: 0px 10px 0 0;
 }
+
 .fa-solid.fa-handshake-angle::before {
     font-size: 13px;
     margin:0px 6px 0 0;

@@ -38,18 +38,18 @@ footer h1 {
   text-align: left;
 }
 
-.contain_partner {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
 .contain_footer {
   padding: 10px;
 }
 
 .contain_footer p {
   margin: 3px 5px 3px 0;
+}
+
+.contain_partner {
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .fa-solid.fa-utensils::before {
@@ -243,6 +243,14 @@ button {
   flex-direction: column;
 }
 
+.new {
+  padding: 7px;
+  background-color: #99E2D0;
+  color: green;
+  font-weight: bold;
+  position: absolute;
+}
+
 .image_restaurant {
   height: 60%;
   width: 100%;
@@ -266,6 +274,12 @@ button {
   padding: 10px;
 }
 
+.contain_text {
+  margin: 0;
+  color: black;
+  font-size: 18px;
+}
+
 .name {
   font-weight: 700;
 }
@@ -274,26 +288,12 @@ button {
   font-weight: 300;
 }
 
-.contain_text {
-  margin: 0;
-  color: black;
-  font-size: 18px;
-}
-
 a:link {
   text-decoration: none;
 }
 
 a:focus {
   color: black;
-}
-
-.new {
-  padding: 7px;
-  background-color: #99E2D0;
-  color: green;
-  font-weight: bold;
-  position: absolute;
 }
 
 @media (min-width: 991px) {
