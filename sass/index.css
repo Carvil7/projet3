@@ -24,6 +24,13 @@ h1 {
   padding: 10px;
 }
 
+.header_left {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
 /* FOOTER */
 footer {
   padding: 20px;
@@ -307,5 +314,6 @@ a:focus {
   }
   .card_restaurant a {
     padding: 0 10px;
+    margin: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
