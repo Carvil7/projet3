@@ -59,6 +59,10 @@ footer h1 {
   margin: 3px 5px 3px 0;
 }
 
+.contain_footer a {
+  color: white;
+}
+
 .contain_partner {
   display: flex;
   align-items: center;
