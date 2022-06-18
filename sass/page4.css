@@ -31,6 +31,12 @@ h1 {
   align-items: center;
 }
 
+.header_left a {
+  position: absolute;
+  left: 20px;
+  color: black;
+}
+
 /* FOOTER */
 footer {
   padding: 20px;
