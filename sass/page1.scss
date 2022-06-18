@@ -7,3 +7,25 @@
     height: 200px;
     object-fit: cover;
 }
+
+.contain_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contain_title_menu {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: -30px;
+    background-color: #f2f2f2;
+    position: relative;
+}
+@media (min-width:767px) {
+    .contain_title {
+        justify-content: center;
+    }
+    .far.fa-light.fa-heart {
+        padding: 20px 30px 20px 30px;
+    }
+}
