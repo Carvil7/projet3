@@ -79,6 +79,7 @@ footer h1 {
   margin: 0px 6px 0 0;
 }
 
+/* Menu */
 .palette img {
   width: 100%;
   height: 200px;
@@ -86,10 +87,18 @@ footer h1 {
      object-fit: cover;
 }
 
+.fa-heart::before {
+  cursor: pointer;
+}
+
 .contain_title {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.contain_menu_text p {
+  font-weight: 300;
 }
 
 .contain_title_menu {
@@ -111,7 +120,7 @@ footer h1 {
 
 .contain_enter p {
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .enter {
@@ -120,7 +129,7 @@ footer h1 {
 }
 
 .price {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .enter_class {
@@ -170,6 +179,10 @@ button {
 
   .far.fa-light.fa-heart {
     padding: 20px 30px 20px 30px;
+  }
+
+  .palette img {
+    height: 300px;
   }
 }
 @media (max-width: 767px) {

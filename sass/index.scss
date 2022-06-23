@@ -1,12 +1,16 @@
 @import 'common';
 
+@mixin boxcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* LOCALISATION */
 
 .loc {
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include boxcenter();
     background-color: #ebedef;
     box-shadow: inset 0px 3px 4px lightgrey;
 }
