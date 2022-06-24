@@ -1,10 +1,5 @@
 @import 'common';
 
-@mixin boxcenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* LOCALISATION */
 
@@ -90,18 +85,14 @@ button {
     color: white;
     font-size:15px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include boxcenter();
     position:absolute;  
 }
 
 .contain_choose {
     width: 440px;
     height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include boxcenter();
     border-radius: 15px;
     background-color: #f2f2f2;
     margin-left: 10px;
@@ -114,9 +105,7 @@ button {
 .contain_choose_bis {
     width: 440px;
     height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include boxcenter();
     border-radius: 15px;
     background-color: #7e278d25;
     margin-left: 10px;
@@ -137,7 +126,7 @@ button {
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 0px;
 }
 
 .contain_restaurants .name .place {
@@ -157,6 +146,7 @@ button {
 #restaurants {
     font-family: $texte;
     margin: 0;
+    padding: 20px 10px;
 }
 
 .card_restaurant {
@@ -241,11 +231,18 @@ a:focus {
     color:black
 }
 
-@media (min-width:991px) {
+@media (min-width:767px) {
     .contain_fonction {
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    #restaurants {
+        text-align: center;
+    }
+    .fonction {
+        text-align: center;
     }
 }
 @media (max-width:767px) {
@@ -258,5 +255,6 @@ a:focus {
             margin: 10px;
         }
     }
+
 }
     
