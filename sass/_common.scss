@@ -99,16 +99,33 @@ h1 {
 .contain_eat p {
     margin: 0;
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu_text::after {
+    content: "";
+    margin: 5px 0;
+    display: block;
+    height: 3px;
+    width: 40px;
+    background: $tertiary;
 }
 
 .text_price {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .eat_text {
     font-weight: 200;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .price {
