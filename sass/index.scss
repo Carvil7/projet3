@@ -51,6 +51,7 @@
             .explore {
             text-decoration: none;
             color: white;
+            font-size: 15px;
             }
         }   
 
@@ -117,6 +118,13 @@
 
 .fa-solid.fa-store {
     color:$primary;
+}
+.fa-solid.fa-list::before {
+    margin-left: -7px;
+}
+
+.fa-solid.fa-mobile-screen-button::before {
+    margin-left:8px;
 }
 
 /* CARD - RESTAURANT */

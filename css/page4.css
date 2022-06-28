@@ -18,21 +18,19 @@ h1, h2, h3, h4 {
 }
 
 /* HEADER */
-.header_left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row-reverse;
-}
-
-h1 {
+header h1 {
   display: block;
   text-align: center;
   margin: 0px;
   padding: 10px;
 }
-
-.header_left a {
+header .header_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+header .header_left a {
   position: absolute;
   left: 20px;
   color: black;
@@ -148,6 +146,7 @@ button {
 .command {
   text-decoration: none;
   color: white;
+  font-size: 15px;
 }
 
 /* FOOTER */
