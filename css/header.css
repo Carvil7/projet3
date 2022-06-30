@@ -50,5 +50,23 @@ h1, h2, h3, h4 {
     width: 100%;
   }
 }
+/* HEADER */
+header h1 {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+}
+header .header_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+header .header_left a {
+  position: absolute;
+  left: 20px;
+  color: black;
+}
 
-/*# sourceMappingURL=page2.css.map */
+/*# sourceMappingURL=header.css.map */

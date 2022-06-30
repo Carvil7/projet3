@@ -50,5 +50,43 @@ h1, h2, h3, h4 {
     width: 100%;
   }
 }
+/* FOOTER */
+footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+footer h1 {
+  color: white;
+  font-size: 20px;
+  display: block;
+  text-align: left;
+  margin-left: 10px;
+}
+footer .contain_footer {
+  padding: 10px;
+}
+footer .contain_footer a {
+  color: white;
+  text-decoration: none;
+}
+footer .contain_footer p {
+  margin: 3px 5px 3px 0;
+}
+footer .contain_footer .contain_partner {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
 
-/*# sourceMappingURL=page2.css.map */
+.fa-solid.fa-utensils::before {
+  font-size: 14px;
+  margin: 0px 10px 0 0;
+}
+
+.fa-solid.fa-handshake-angle::before {
+  font-size: 13px;
+  margin: 0px 6px 0 0;
+}
+
+/*# sourceMappingURL=footer.css.map */

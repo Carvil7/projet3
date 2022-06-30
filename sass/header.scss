@@ -1,0 +1,23 @@
+@import '_common';
+
+/* HEADER */
+
+header {
+
+    h1 {
+        @include blockcenter();
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .header_left {
+        @include boxcenter();
+        flex-direction: row-reverse;
+
+        a {
+            position: absolute;
+            left:20px;
+            color:black; 
+        }        
+    }
+}

@@ -50,5 +50,31 @@ h1, h2, h3, h4 {
     width: 100%;
   }
 }
+/* BOUTONS */
+.button_command {
+  background-color: #f2f2f2;
+  display: block;
+  text-align: center;
+}
+.button_command .button_bis {
+  display: block;
+  text-align: center;
+  padding: 30px 50px 80px 50px;
+}
+.button_command .button_bis button {
+  height: 50px;
+  width: 160px;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(#FF79DA, #9256dc);
+  border-radius: 25px;
+  border: grey;
+  box-shadow: 0 5px 7px rgb(200, 199, 199);
+}
+.button_command .button_bis button .command {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
 
-/*# sourceMappingURL=page2.css.map */
+/*# sourceMappingURL=buttons.css.map */
