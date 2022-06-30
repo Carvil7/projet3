@@ -36,7 +36,7 @@ h1, h2, h3, h4 {
     padding: 15px;
   }
   .far.fa-light.fa-heart {
-    padding: 20px 30px 20px 30px;
+    padding: 20px 0px 20px 30px;
   }
   .button_command .button_bis button {
     width: 220px;
@@ -272,16 +272,16 @@ a:focus {
 }
 
 @media (min-width: 767px) {
-  .fonction {
+  .choose_menu .fonction {
     text-align: center;
   }
-  .contain_fonction {
+  .choose_menu .contain_fonction {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  #restaurants {
+  .contain_restaurants .cards #restaurants {
     text-align: center;
   }
 }

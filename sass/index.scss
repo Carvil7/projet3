@@ -233,6 +233,9 @@
 
 }
 
+
+
+
 .contain_restaurants .name .place {
     font-size: 92%;
 }
@@ -250,20 +253,26 @@ a:focus {
 
 @media (min-width:767px) {
 
-    .fonction {
-        text-align: center;
+    .choose_menu {
+        .fonction {
+            text-align: center;
+        }       
+        .contain_fonction {
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
-    .contain_fonction {
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    .contain_restaurants {
+        .cards {
+             #restaurants {
+                text-align: center;
+            }
+        }        
     }
-    #restaurants {
-        text-align: center;
-    }
-
+   
 }
 
 @media (max-width:767px) {
