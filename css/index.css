@@ -1,4 +1,5 @@
 @import '_normalize.css';
+/* MIXINS */
 @import 'header.css';
 @import 'footer.css';
 @import 'buttons.css';
@@ -6,7 +7,6 @@
 @import 'img.css';
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* MIXINS */
 /* CONFIG BODY & TITRE */
 * {
   box-sizing: border-box;
@@ -95,11 +95,17 @@ h1, h2, h3, h4 {
   border-radius: 25px;
   border: grey;
   box-shadow: 0 5px 7px rgb(200, 199, 199);
+  transition: background initial;
+  transition: box-shadow initial;
 }
 .eat .button_ button .explore {
   text-decoration: none;
   color: white;
   font-size: 15px;
+}
+.eat .button_ button:hover {
+  background: linear-gradient(#f982d7, #975edd);
+  box-shadow: 0 5px 7px rgb(156, 154, 154);
 }
 
 /* FONCTIONNEMENT */
@@ -253,6 +259,25 @@ h1, h2, h3, h4 {
 }
 .contain_restaurants .cards .card_restaurant a .description_text .contain_text .place {
   font-weight: 300;
+}
+.contain_restaurants .cards .card_restaurant a .description_text .contain_icon {
+  position: relative;
+}
+.contain_restaurants .cards .card_restaurant a .description_text .contain_icon .heart_a {
+  position: absolute;
+  left: 0;
+}
+.contain_restaurants .cards .card_restaurant a .description_text .contain_icon .heart_b {
+  background: linear-gradient(#FF79DA, #9256dc);
+  background-clip: text;
+  color: transparent;
+  visibility: hidden;
+}
+.contain_restaurants .cards .card_restaurant a .description_text .contain_icon .contain_icon:hover > .heart_b {
+  visibility: visible;
+  animation: 0.3s filling-heart ease-in-out forwards;
+  transform-origin: bottom;
+  cursor: pointer;
 }
 
 .contain_restaurants .name .place {

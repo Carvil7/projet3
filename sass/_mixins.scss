@@ -1,0 +1,14 @@
+//mixins
+
+/* MIXINS */
+
+@mixin boxcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin blockcenter {
+    display: block;
+    text-align: center;
+}
