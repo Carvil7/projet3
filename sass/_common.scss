@@ -1,11 +1,11 @@
 @import '_variables';
 @import '_normalize.css';
 @import "_mixins";
-@import 'header.css';
-@import 'footer.css';
-@import 'buttons.css';
-@import 'menus.css';
-@import 'img.css';
+@import '_header';
+@import '_footer';
+@import '_buttons';
+@import '_menus';
+@import '_img';
 
 
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
