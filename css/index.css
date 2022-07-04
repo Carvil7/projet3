@@ -50,6 +50,31 @@ h1, h2, h3, h4 {
     width: 100%;
   }
 }
+/* LOADING SPINNER */
+.loadingspinner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loadingspinner .spinner {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  border: 5px solid #9256dc;
+  border-radius: 50%;
+  border-top-color: #FF79DA;
+  animation: spiner 1s infinite linear;
+}
+@keyframes spiner {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 /* LOCALISATION */
 .loc {
   text-align: center;
