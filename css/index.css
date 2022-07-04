@@ -67,7 +67,7 @@ h1, h2, h3, h4 {
   border: 5px solid #9256dc;
   border-radius: 50%;
   border-top-color: #FF79DA;
-  animation: spiner 1s infinite linear;
+  animation: spiner 1.5s infinite linear;
 }
 @keyframes spiner {
   to {
