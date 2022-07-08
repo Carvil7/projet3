@@ -39,29 +39,30 @@
                 box-shadow: 0px 5px 10px rgb(200 199 199 / 80%);
                 border-radius: 15px;
                 width:500px;
-                padding: 10px;
+                display: flex;
+                overflow: hidden;
                 margin: 10px 10px 10px 0;
-                animation:3s eat ;
+                animation:2s eat backwards;
 
                 &:nth-child(1) {
-                    animation-duration: 1s;
+                    animation-delay: 100ms;
                 }
 
                 &:nth-child(2) {
-                    animation-duration: 2s;
+                    animation-delay: 200ms;
                 }
                 &:nth-child(3) {
-                    animation-duration: 3s;
+                    animation-delay: 300ms;
                 }
                 &:nth-child(4) {
-                    animation-duration: 4s;
+                    animation-delay: 400ms;
                 }
                 &:nth-child(5) {
-                    animation-duration: 5s;
+                    animation-delay: 500ms;
                 }
 
                 @keyframes eat {
-                    20% {
+                    0% {
                         transform: translateY(50%);
                         opacity:0;
                     }
@@ -72,30 +73,61 @@
                     }
                 }
                 
-                p {
-                    margin: 0;
-                    font-weight: 500;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    white-space: nowrap
-                }
-
-                .text_price {
+                .text {
+                    width: 85%;
+                    padding: 15px 0 15px 15px;
                     display: flex;
-                    justify-content: space-between;
-                    font-size: 15px;
-                    text-overflow: ellipsis;
+                    flex-direction: column;
                     overflow: hidden;
-
-                    .eat_text {
-                        font-weight: 200;
+                    white-space: nowrap;
+               
+                    p {
+                        font-weight: 700;
+                        font-size: 110%;
+                        width: 100%;
+                        margin-bottom: 5px;
                         text-overflow: ellipsis;
-                        white-space: nowrap;
                         overflow: hidden;
+                        margin:0;
                     }
 
-                    .price {
-                    font-weight: 500;
+                    .eat_text {
+                        font-size: 90%;
+                        width: 100%;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }          
+
+                }
+                .price {
+                    height: 100%;
+                    width: 15%;
+                    font-weight: 700;
+                    font-size: 90%;
+                    align-self: flex-end;
+                    text-align: center;
+                    padding: 15px 0px;
+                }          
+                .check_green {
+                    background: $tertiary;
+                    width: 20%;
+                    margin-right:-25%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition:margin-right 1s ease-in-out;
+                    i {
+                        color: white;
+                        font-size: 150%;
+                    }
+                }
+                
+                &:hover .check_green {
+                    margin-right:0;
+                    
+                    i {    
+                        animation: 0.6s check 0.2s linear;
                     }
                 }
 
@@ -106,6 +138,14 @@
     }
 }
 
+@keyframes check {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transition: rotate(0);
+    }
+}
 .fa-heart::before {
     cursor: pointer;
 }
