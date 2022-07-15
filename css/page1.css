@@ -73,25 +73,24 @@ footer .contain_footer .contain_partner {
   text-align: center;
   padding: 30px 50px 80px 50px;
 }
-.button_command .button_bis button {
+.button_command .button_bis a {
   height: 50px;
   width: 160px;
-  padding: 10px;
+  padding: 15px 30px;
   text-align: center;
   background: linear-gradient(#FF79DA, #9256dc);
-  border-radius: 25px;
+  border-radius: 30px;
   border: grey;
   box-shadow: 0 5px 7px rgb(200, 199, 199);
   cursor: pointer;
-  transition: background initial;
-  transition: box-shadow initial;
+  transition: background, box-shadow;
 }
-.button_command .button_bis button .command {
+.button_command .button_bis a.command {
   text-decoration: none;
   color: white;
   font-size: 15px;
 }
-.button_command .button_bis button:hover {
+.button_command .button_bis a:hover {
   background: linear-gradient(#f982d7, #975edd);
   box-shadow: 0 5px 7px rgb(156, 154, 154);
 }
@@ -109,6 +108,40 @@ footer .contain_footer .contain_partner {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.contain_title_menu .contain_title .contain_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 110%;
+}
+.contain_title_menu .contain_title .contain_icon .heart_a {
+  position: absolute;
+  left: 0;
+}
+.contain_title_menu .contain_title .contain_icon .heart_b {
+  background: linear-gradient(#FF79DA, #9256dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  visibility: hidden;
+}
+.contain_title_menu .contain_title .contain_icon:hover > .heart_b {
+  visibility: visible;
+  animation: 0.3s filling-heart ease-in-out forwards;
+  transform-origin: bottom;
+  cursor: pointer;
+  font-weight: bold;
+}
+@keyframes filling-heart {
+  0% {
+    transform: scaleX(0) scaleY(0);
+  }
+  100% {
+    transform: scaleX(1.1) scaleY(1.1);
+  }
 }
 .contain_title_menu .contain_menu {
   padding: 10px;
@@ -221,13 +254,9 @@ footer .contain_footer .contain_partner {
     transform: rotate(360deg);
   }
   100% {
-    transition: rotate(0);
+    transform: rotate(0);
   }
 }
-.fa-heart::before {
-  cursor: pointer;
-}
-
 /* Image */
 .img_restaurant img {
   width: 100%;
@@ -259,6 +288,9 @@ h1, h2, h3, h4 {
   }
   .contain_title_menu .contain_title {
     justify-content: center;
+  }
+  .contain_title_menu .contain_title h2 {
+    padding-right: 10px;
   }
   .far.fa-light.fa-heart {
     padding: 20px 0px 20px 30px;
