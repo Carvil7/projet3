@@ -141,7 +141,7 @@
             }
 
             .contain_choose {
-                width: 440px;
+                width: 100%;
                 height: 80px;
                 @include boxcenter();
                 border-radius: 15px;
@@ -155,7 +155,7 @@
             }
 
             .contain_choose_bis {
-                width: 440px;
+                width: 100%;
                 height: 80px;
                 @include boxcenter();
                 border-radius: 15px;
@@ -349,6 +349,15 @@ a:focus {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+
+            .choose {
+                .contain_choose {
+                    width: 440px;
+                }
+                .contain_choose_bis {
+                    width: 440px;
+                }
+            }
         }
     }
 
