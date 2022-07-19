@@ -24,7 +24,7 @@ header .header_left a {
 
 /* FOOTER */
 footer {
-  padding: 20px;
+  padding: 10px;
   background-color: black;
   color: white;
 }
@@ -50,13 +50,11 @@ footer .contain_footer .contain_partner {
   align-items: center;
   justify-content: left;
 }
-
-.fa-solid.fa-utensils::before {
+footer .contain_footer .contain_partner .fa-solid.fa-utensils::before {
   font-size: 14px;
   margin: 0px 10px 0 0;
 }
-
-.fa-solid.fa-handshake-angle::before {
+footer .contain_footer .contain_partner .fa-solid.fa-handshake-angle::before {
   font-size: 13px;
   margin: 0px 6px 0 0;
 }
@@ -144,14 +142,20 @@ footer .contain_footer .contain_partner {
   }
 }
 .contain_title_menu .contain_menu {
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+.contain_title_menu .contain_menu .contain_menu_text {
+  padding-bottom: 30px;
+}
 .contain_title_menu .contain_menu .contain_menu_text .menu_text {
   font-weight: 300;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
 }
 .contain_title_menu .contain_menu .contain_menu_text .menu_text::after {
   content: "";

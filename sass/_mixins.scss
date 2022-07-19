@@ -12,3 +12,7 @@
     display: block;
     text-align: center;
 }
+
+@mixin boxshadowgrey {
+    box-shadow: 0 5px 10px rgb(200, 199, 199);
+}

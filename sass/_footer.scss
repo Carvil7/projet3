@@ -3,7 +3,7 @@
 /* FOOTER */
 
 footer {
-    padding: 20px;
+    padding: 10px;
     background-color: black;
     color:white;
 
@@ -29,17 +29,23 @@ footer {
         .contain_partner {
             display: flex;
             align-items: center;
-            justify-content: left;         
+            justify-content: left;
+            
+          
+            .fa-solid.fa-utensils::before {
+                font-size: 14px;
+                margin: 0px 10px 0 0;
+            } 
+
+            .fa-solid.fa-handshake-angle::before {
+                font-size: 13px;
+                margin:0px 6px 0 0;
+            }
+            
         }
     }
 }
 
-.fa-solid.fa-utensils::before {
-    font-size: 14px;
-    margin: 0px 10px 0 0;
-}
 
-.fa-solid.fa-handshake-angle::before {
-    font-size: 13px;
-    margin:0px 6px 0 0;
-}
+
+

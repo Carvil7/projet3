@@ -17,9 +17,7 @@
 
         .contain_icon {
             position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include boxcenter;
             font-size: 110%;
       
             .heart_a {
@@ -56,14 +54,18 @@
     }
 
     .contain_menu {
-        padding: 10px;
+        padding: 0px 10px 0px 10px;
         @include boxcenter();
         flex-direction: column;
         
         .contain_menu_text {
-         
+            padding-bottom: 30px;
+            
             .menu_text {
                 font-weight: 300;
+                margin: 0;
+                font-family: $texte;
+                font-size: 16px;
             }
             .menu_text::after {
                 content: "";
@@ -151,9 +153,7 @@
                     background: $tertiary;
                     width: 20%;
                     margin-right:-25%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include boxcenter;
                     cursor: pointer;
                     transition:margin-right 1s ease-in-out;
                     i {

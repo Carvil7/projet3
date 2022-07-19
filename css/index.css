@@ -24,7 +24,7 @@ header .header_left a {
 
 /* FOOTER */
 footer {
-  padding: 20px;
+  padding: 10px;
   background-color: black;
   color: white;
 }
@@ -50,13 +50,11 @@ footer .contain_footer .contain_partner {
   align-items: center;
   justify-content: left;
 }
-
-.fa-solid.fa-utensils::before {
+footer .contain_footer .contain_partner .fa-solid.fa-utensils::before {
   font-size: 14px;
   margin: 0px 10px 0 0;
 }
-
-.fa-solid.fa-handshake-angle::before {
+footer .contain_footer .contain_partner .fa-solid.fa-handshake-angle::before {
   font-size: 13px;
   margin: 0px 6px 0 0;
 }
@@ -144,14 +142,20 @@ footer .contain_footer .contain_partner {
   }
 }
 .contain_title_menu .contain_menu {
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+.contain_title_menu .contain_menu .contain_menu_text {
+  padding-bottom: 30px;
+}
 .contain_title_menu .contain_menu .contain_menu_text .menu_text {
   font-weight: 300;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
 }
 .contain_title_menu .contain_menu .contain_menu_text .menu_text::after {
   content: "";
@@ -314,8 +318,8 @@ h1, h2, h3, h4 {
   width: 100%;
   background-color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   animation: opacityloader 3s linear forwards;
 }
 .loadingspinner .spinner {
@@ -367,6 +371,7 @@ h1, h2, h3, h4 {
 .eat .menu {
   display: block;
   text-align: center;
+  padding-bottom: 10px;
 }
 .eat .menu .eat_menu {
   margin: 0;
@@ -410,7 +415,7 @@ h1, h2, h3, h4 {
 
 /* FONCTIONNEMENT */
 .choose_menu {
-  padding: 20px 0 20px 0;
+  padding: 30px 0 40px 0;
 }
 .choose_menu .fonction {
   font-family: "Roboto";
@@ -482,7 +487,7 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: space-between;
   background-color: #f2f2f2;
-  padding: 0px;
+  padding-bottom: 30px;
 }
 .contain_restaurants .cards {
   width: 100%;
@@ -492,7 +497,7 @@ h1, h2, h3, h4 {
 .contain_restaurants .cards #restaurants {
   font-family: "Roboto";
   margin: 0;
-  padding: 20px 10px;
+  padding: 40px 10px 20px 10px;
 }
 .contain_restaurants .cards .card_restaurant {
   width: 100%;
@@ -556,6 +561,9 @@ h1, h2, h3, h4 {
 }
 .contain_restaurants .cards .card_restaurant a .description_text .contain_text .name {
   font-weight: 700;
+  font-family: "Roboto";
+  font-size: 18px;
+  margin: 0;
 }
 .contain_restaurants .cards .card_restaurant a .description_text .contain_text .place {
   font-weight: 300;
@@ -608,6 +616,9 @@ a:focus {
 }
 
 @media (min-width: 767px) {
+  .choose_menu {
+    padding: 10px 0 40px 0;
+  }
   .choose_menu .fonction {
     text-align: center;
   }
@@ -617,8 +628,12 @@ a:focus {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .contain_restaurants {
+    padding-bottom: 0;
+  }
   .contain_restaurants .cards #restaurants {
     text-align: center;
+    padding: 20px 10px 0;
   }
 }
 @media (max-width: 767px) {
