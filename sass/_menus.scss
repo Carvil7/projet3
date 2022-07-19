@@ -13,7 +13,8 @@
     .contain_title {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 10px 35px 10px 10px;
 
         .contain_icon {
             position: relative;
@@ -60,7 +61,7 @@
         
         .contain_menu_text {
             padding-bottom: 30px;
-            
+
             .menu_text {
                 font-weight: 300;
                 margin: 0;

@@ -105,7 +105,8 @@ footer .contain_footer .contain_partner .fa-solid.fa-handshake-angle::before {
 .contain_title_menu .contain_title {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 10px 35px 10px 10px;
 }
 .contain_title_menu .contain_title .contain_icon {
   position: relative;
